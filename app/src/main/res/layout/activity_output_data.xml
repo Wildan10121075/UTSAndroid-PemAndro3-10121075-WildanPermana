@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Wildan Permana - 10121075 -->
+<!-- PemAndro3 - 20 Juni 2024 -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".OutputData">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            android:backgroundTint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_cek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cek_kembali"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="80dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <View
+            android:id="@+id/v_cek_tes"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_cek"/>
+
+        <TextView
+            android:id="@+id/txt_cek_tes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jenis_tes"
+            android:textStyle="bold"
+            android:layout_marginEnd="300dp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintStart_toStartOf="@+id/v_cek_tes"
+            app:layout_constraintEnd_toEndOf="@+id/v_cek_tes"
+            app:layout_constraintBottom_toBottomOf="@+id/v_cek_tes"
+            app:layout_constraintTop_toTopOf="@+id/v_cek_tes"/>
+
+        <TextView
+            android:id="@+id/txt_tes"
+            android:layout_width="355dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="20dp"
+            android:text="Tes"
+            app:layout_constraintStart_toStartOf="@+id/v_cek_tes"
+            app:layout_constraintEnd_toEndOf="@+id/v_cek_tes"
+            app:layout_constraintTop_toTopOf="@+id/v_cek_tes"
+            app:layout_constraintBottom_toBottomOf="@+id/v_cek_tes"/>
+
+        <View
+            android:id="@+id/v_cek_konfirmasi"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="@+id/v_cek_tes"
+            app:layout_constraintEnd_toEndOf="@+id/v_cek_tes"
+            app:layout_constraintTop_toBottomOf="@+id/v_cek_tes"/>
+
+        <TextView
+            android:id="@+id/txt_cek_konfirmasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tanggal_terkonfirmasi"
+            android:textStyle="bold"
+            android:layout_marginEnd="223dp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintStart_toStartOf="@+id/v_cek_konfirmasi"
+            app:layout_constraintEnd_toEndOf="@+id/v_cek_konfirmasi"
+            app:layout_constraintBottom_toBottomOf="@+id/v_cek_konfirmasi"
+            app:layout_constraintTop_toTopOf="@+id/v_cek_konfirmasi"/>
+
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="355dp"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@+id/v_cek_konfirmasi"
+            app:layout_constraintEnd_toEndOf="@+id/v_cek_konfirmasi"
+            app:layout_constraintTop_toTopOf="@+id/v_cek_konfirmasi"
+            app:layout_constraintBottom_toBottomOf="@+id/v_cek_konfirmasi"/>
+
+        <View
+            android:id="@+id/v_cek_nik"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="@+id/v_cek_konfirmasi"
+            app:layout_constraintEnd_toEndOf="@+id/v_cek_konfirmasi"
+            app:layout_constraintTop_toBottomOf="@+id/v_cek_konfirmasi"/>
+
+        <TextView
+            android:id="@+id/txt_cek_nik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nik"
+            android:textStyle="bold"
+            android:layout_marginEnd="340dp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintStart_toStartOf="@+id/v_cek_nik"
+            app:layout_constraintEnd_toEndOf="@+id/v_cek_nik"
+            app:layout_constraintBottom_toBottomOf="@+id/v_cek_nik"
+            app:layout_constraintTop_toTopOf="@+id/v_cek_nik"/>
+
+        <TextView
+            android:id="@+id/txt_nik"
+            android:layout_width="355dp"
+            android:layout_height="wrap_content"
+            android:text="NIK"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@+id/v_cek_nik"
+            app:layout_constraintEnd_toEndOf="@+id/v_cek_nik"
+            app:layout_constraintTop_toTopOf="@+id/v_cek_nik"
+            app:layout_constraintBottom_toBottomOf="@+id/v_cek_nik"/>
+
+        <View
+            android:id="@+id/v_cek_nama"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="@+id/v_cek_nik"
+            app:layout_constraintEnd_toEndOf="@+id/v_cek_nik"
+            app:layout_constraintTop_toBottomOf="@+id/v_cek_nik"/>
+
+        <TextView
+            android:id="@+id/txt_cek_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nama"
+            android:textStyle="bold"
+            android:layout_marginEnd="326dp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintStart_toStartOf="@+id/v_cek_nama"
+            app:layout_constraintEnd_toEndOf="@+id/v_cek_nama"
+            app:layout_constraintBottom_toBottomOf="@+id/v_cek_nama"
+            app:layout_constraintTop_toTopOf="@+id/v_cek_nama"/>
+
+        <TextView
+            android:id="@+id/txt_nama"
+            android:layout_width="355dp"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@+id/v_cek_nama"
+            app:layout_constraintEnd_toEndOf="@+id/v_cek_nama"
+            app:layout_constraintTop_toTopOf="@+id/v_cek_nama"
+            app:layout_constraintBottom_toBottomOf="@+id/v_cek_nama"/>
+
+        <View
+            android:id="@+id/v_cek_birth"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="@+id/v_cek_nama"
+            app:layout_constraintEnd_toEndOf="@+id/v_cek_nama"
+            app:layout_constraintTop_toBottomOf="@+id/v_cek_nama"/>
+
+        <TextView
+            android:id="@+id/txt_cek_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tanggal_lahir"
+            android:textStyle="bold"
+            android:layout_marginEnd="278dp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintStart_toStartOf="@+id/v_cek_birth"
+            app:layout_constraintEnd_toEndOf="@+id/v_cek_birth"
+            app:layout_constraintBottom_toBottomOf="@+id/v_cek_birth"
+            app:layout_constraintTop_toTopOf="@+id/v_cek_birth"/>
+
+        <TextView
+            android:id="@+id/txt_birth"
+            android:layout_width="355dp"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Lahir"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@+id/v_cek_birth"
+            app:layout_constraintEnd_toEndOf="@+id/v_cek_birth"
+            app:layout_constraintTop_toTopOf="@+id/v_cek_birth"
+            app:layout_constraintBottom_toBottomOf="@+id/v_cek_birth"/>
+
+        <View
+            android:id="@+id/v_cek_kelamin"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="@+id/v_cek_birth"
+            app:layout_constraintEnd_toEndOf="@+id/v_cek_birth"
+            app:layout_constraintTop_toBottomOf="@+id/v_cek_birth"/>
+
+        <TextView
+            android:id="@+id/txt_cek_kelamin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jenis_kelamin"
+            android:textStyle="bold"
+            android:layout_marginEnd="275dp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintStart_toStartOf="@+id/v_cek_kelamin"
+            app:layout_constraintEnd_toEndOf="@+id/v_cek_kelamin"
+            app:layout_constraintBottom_toBottomOf="@+id/v_cek_kelamin"
+            app:layout_constraintTop_toTopOf="@+id/v_cek_kelamin"/>
+
+        <TextView
+            android:id="@+id/txt_kelamin"
+            android:layout_width="355dp"
+            android:layout_height="wrap_content"
+            android:text="Kelamin"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@+id/v_cek_kelamin"
+            app:layout_constraintEnd_toEndOf="@+id/v_cek_kelamin"
+            app:layout_constraintTop_toTopOf="@+id/v_cek_kelamin"
+            app:layout_constraintBottom_toBottomOf="@+id/v_cek_kelamin"/>
+
+        <View
+            android:id="@+id/v_cek_hubungan"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="@+id/v_cek_kelamin"
+            app:layout_constraintEnd_toEndOf="@+id/v_cek_kelamin"
+            app:layout_constraintTop_toBottomOf="@+id/v_cek_kelamin"/>
+
+        <TextView
+            android:id="@+id/txt_cek_hubungan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hubungan_dengan_anda"
+            android:textStyle="bold"
+            android:layout_marginEnd="212dp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintStart_toStartOf="@+id/v_cek_hubungan"
+            app:layout_constraintEnd_toEndOf="@+id/v_cek_hubungan"
+            app:layout_constraintBottom_toBottomOf="@+id/v_cek_hubungan"
+            app:layout_constraintTop_toTopOf="@+id/v_cek_hubungan"/>
+
+        <TextView
+            android:id="@+id/txt_hubungan"
+            android:layout_width="355dp"
+            android:layout_height="wrap_content"
+            android:text="Hubungan"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@+id/v_cek_hubungan"
+            app:layout_constraintEnd_toEndOf="@+id/v_cek_hubungan"
+            app:layout_constraintTop_toTopOf="@+id/v_cek_hubungan"
+            app:layout_constraintBottom_toBottomOf="@+id/v_cek_hubungan"/>
+
+        <Button
+            android:id="@+id/btn_cek_hasil"
+            android:layout_width="355dp"
+            android:layout_height="wrap_content"
+            android:text="Cek Hasil Tes"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/hijau"
+            tools:layout_editor_absoluteX="141dp"
+            tools:layout_editor_absoluteY="560dp"
+            app:layout_constraintStart_toStartOf="@+id/v_cek_hubungan"
+            app:layout_constraintTop_toBottomOf="@+id/v_cek_hubungan"
+            app:layout_constraintEnd_toEndOf="@+id/v_cek_hubungan"/>
+
+        <Button
+            android:id="@+id/btn_ubah"
+            android:layout_width="355dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/abu"
+            android:textColor="@color/black"
+            android:text="Ubah"
+            tools:layout_editor_absoluteX="179dp"
+            tools:layout_editor_absoluteY="649dp"
+            app:layout_constraintStart_toStartOf="@+id/btn_cek_hasil"
+            app:layout_constraintEnd_toEndOf="@+id/btn_cek_hasil"
+            app:layout_constraintTop_toBottomOf="@id/btn_cek_hasil"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

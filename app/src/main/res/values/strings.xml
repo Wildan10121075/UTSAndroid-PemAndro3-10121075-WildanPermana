@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">UTSAndroid-PemAndro3-10121075-WildanPermana</string>
+    <string name="checkbox">Dengan ini saya menyetujui bahwa data yang saya isikan adalah benar</string>
+    <string name="form_pengisian_data">Form Pengisian Data</string>
+    <string name="jenis_tes">Jenis Tes</string>
+    <string name="harus_diisi">- harus diisi</string>
+    <string name="rapid_antigen">Rapid Antigen</string>
+    <string name="pcr">PCR</string>
+    <string name="tanggal_terkonfirmasi">Tanggal Terkonfirmasi</string>
+    <string name="nik">NIK</string>
+    <string name="nama">Nama</string>
+    <string name="tanggal_lahir">Tanggal Lahir</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="laki_laki">Laki - Laki</string>
+    <string name="perempuan">Perempuan</string>
+    <string name="hubungan_dengan_anda">Hubungan Dengan Anda</string>
+    <string name="orang_tua">Orang tua</string>
+    <string name="suami_istri">Suami/Istri</string>
+    <string name="anak">Anak</string>
+    <string name="kerabat_lainnya">Kerabat Lainnya</string>
+    <string name="selanjutnya">Selanjutnya</string>
+    <string name="lapor">Silahkan tap tombol dibawah untuk memulai mengisi form Lapor Kesehatan Harian</string>
+    <string name="cek_kembali">Cek Kembali Isian Anda</string>
+    <string name="berhasil_mendapatkan_akses">Berhasil Mendapatkan Akses</string>
+    <string name="oke">oke</string>
+</resources>
